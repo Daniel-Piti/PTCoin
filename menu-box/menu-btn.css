@@ -16,7 +16,7 @@
     border-radius: 15px;
   }
   .menu-btn__burger {
-    width: 28px;
+    width: 24px;
     height: 4px;
     background: #fff;
     border-radius: 5px;
@@ -27,7 +27,7 @@
   .menu-btn__burger::after {
     content: '';
     position: absolute;
-    width: 28px;
+    width: 24px;
     height: 4px;
     background: #fff;
     border-radius: 5px;
@@ -35,10 +35,10 @@
     transition: all .5s ease-in-out;
   }
   .menu-btn__burger::before {
-    transform: translateY(-11px);
+    transform: translateY(-9px);
   }
   .menu-btn__burger::after {
-    transform: translateY(11px);
+    transform: translateY(9px);
   }
   /* ANIMATION */
   .menu-btn.open .menu-btn__burger {

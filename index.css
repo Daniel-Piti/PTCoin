@@ -3,6 +3,8 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 body{
@@ -11,9 +13,10 @@ body{
 }
 
 nav{
-    background: teal;
+    background: hsl(119, 55%, 38%);
     height: 80px;
     width: 100%;
+    z-index: 10;
 }
 
 label.logo{
@@ -48,6 +51,44 @@ nav ul li a{
 
 .check-btn{
     display: none;
+}
+
+.address-card-wrapper{
+    position: relative;
+    width: 500px;
+    height: 70px;
+    margin: 30px;
+    background: hsl(119, 53%, 63%);
+    border-radius: 40px;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.15),
+    5px 5px 15px rgba(0, 0, 0, 0.15),
+    -5px -5px 15px rgba(255, 255, 255, 0.15);
+    z-index: -10;
+}
+
+.address-card-inner{
+    position: relative;
+    width: 490px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 40px;
+    top: 5px;
+    background: hsl(119, 81%, 80%);
+}
+.address-card-inner h2{
+    position: relative;
+    left: 22px;
+    top:12px;
+}
+.address-card-wrapper button{
+    border: solid hsl(118, 56%, 12%) 2px;
+    height: 36px;
+    width: 136px;
+    font-weight: bold;
+    border-radius: 20px;
+    background: hsl(119, 62%, 29%);
+    color: white;
 }
 
 @media (max-width: 952px){
